@@ -50,6 +50,14 @@ export default function HomeScreen() {
           <ThemedText type="defaultSemiBold">app-example</ThemedText>.
         </ThemedText>
       </ThemedView>
+      <ThemedView style={styles.stepContainer}>
+        <ThemedText type="subtitle">Success Message</ThemedText>
+        <ThemedText>
+          Hello, World! I have successfully run a React Native app! 
+          I can run the React Native app on an iOS device, an Android device, and on web all successfully
+          with this new message displayed!
+        </ThemedText>
+      </ThemedView>
     </ParallaxScrollView>
   );
 }
