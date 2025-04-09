@@ -19,6 +19,8 @@ the app on an Apple iPhone device.
 1) Create a new empty directory with a specific name that only contains lowercase alphabet letters, numbers, or hyphens. 
 2) Use a series of ```cd``` commands in Terminal or other command-line interfaces to navigate to the new directory.
 3) Run the command ```npx create-expo-start .``` to create a React Native App that is compatible with Expo Go!
+   * This may automatically run ```npm install``` on your local device, so you don't need to run that command again!
+4) Test the new app by running the command ```npx expo start``` and follow the instructions shown.
 
 ## Renaming the name of the directory containing this React Native App
 You can rename the directory containing the React Native app to include other characters, such as capital letters and spaces, for easier readability!
