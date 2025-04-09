@@ -20,6 +20,12 @@ the app on an Apple iPhone device.
 2) Use a series of ```cd``` commands in Terminal or other command-line interfaces to navigate to the new directory.
 3) Run the command ```npx create-expo-start .``` to create a React Native App that is compatible with Expo Go!
 
+## Renaming the name of the directory containing this React Native App
+You can rename the directory containing the React Native app to include other characters, such as capital letters and spaces, for easier readability!
+
+1) Use the command in the syntax form ```mv "current-directory-name" "new-directory-name"``` to change the directory's name to a different name!
+2) Change the name field in the app.json file to match the current name of that directory!
+
 ## This is the README file as part of starter code file for setting this experiment up.
 # Welcome to your Expo app 👋
 
