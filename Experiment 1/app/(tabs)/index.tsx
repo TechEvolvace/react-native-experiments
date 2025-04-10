@@ -58,6 +58,15 @@ export default function HomeScreen() {
           with this new message displayed!
         </ThemedText>
       </ThemedView>
+
+      {/* Experiment 1 Findings */}
+      <ThemedView style={styles.stepContainer}>
+        <ThemedText type="subtitle">Experiment 1 Findings</ThemedText>
+        <ThemedText>
+          The content displayed is contained within the index.tsx file. This means when the React Native app is run and loaded, then 
+          the index.tsx file is the landing page for the React Native app.
+        </ThemedText>
+      </ThemedView>
     </ParallaxScrollView>
   );
 }
