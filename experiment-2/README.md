@@ -1,3 +1,6 @@
+# Experiment 2 
+This experiment focuses on developing an app with multiple pages and intuitive navigation buttons to navigate between each of these pages, and the main programming langauge used to develop this app is React Native. 
+
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
