@@ -1,6 +1,19 @@
 # Experiment 2 
 This experiment focuses on developing an app with multiple pages and intuitive navigation buttons to navigate between each of these pages, and the main programming langauge used to develop this app is React Native. 
 
+## Findings
+There is a JavaScript file among the starter code for React Native app provided that when run will remove only all of the excess starter code features easily and efficiently. 
+
+This JavaScript file to run is the reset-project.js located in the scripts directory. You can run this file by running the provided script command, which can be found in the package.json file: 
+```
+npm run reset-project
+```
+
+After this is successfully run, you can safely delete the following command from the package.json file: 
+```
+"reset-project": "node ./scripts/reset-project"
+```
+
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
