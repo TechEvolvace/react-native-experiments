@@ -1,3 +1,4 @@
+// About page
 import { Text, View } from "react-native";
 
 export default function Index() {
@@ -9,7 +10,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Welcome to the Insights page! This page is where I record my findings when developing this app for this Experiment!</Text>
+      <Text>Welcome to the About page! I will tell you about the purpose behind this app in this Experiment here!</Text>
     </View>
   );
 }

@@ -1,3 +1,4 @@
+// Home page (also the landing page for this app)
 import { Text, View } from "react-native";
 
 export default function Index() {
