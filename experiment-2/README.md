@@ -12,6 +12,11 @@ npm run reset-project
 After this is successfully run, you can safely delete the following command from the package.json file: 
 ```
 "reset-project": "node ./scripts/reset-project"
+
+The app directory contains all the files for each of the app's webpages in this Experiment and the _layout.tsx file. 
+* The _layout.tsx file, indicated with a _, is a special file that Expo Router uses to control the layout and navigation for all of the app's webpages!
+* Whenever you need to add a new webpage for the app, you can create a new file with a specific name without the beginning underscore in front of the new file name inside the app directory. The _layout.tsx file automatically adds all the other files that can be treated as Screens to the stack for display. 
+* Any file without the underscore in front of the name (unlike _layout.tsx) are files that can be treated as a Screen. Every webpage needs to have their corresponding file be treated as Screens.
 ```
 
 # Welcome to your Expo app 👋
