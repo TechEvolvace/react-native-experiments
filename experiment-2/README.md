@@ -2,6 +2,16 @@
 This experiment focuses on developing an app with multiple pages and intuitive navigation buttons to navigate between each of these pages, and the main programming langauge used to develop this app is React Native. 
 
 ## Findings
+
+### Finding 1
+Creating a React Native app use TypeScript by default, which is why the app pages' files have .tsx ending.
+
+Apparently, in order to create a React Native Expo project with JavaScript, use the following command: 
+```
+npx create-expo-app@latest -t
+```
+
+### Finding 2
 There is a JavaScript file among the starter code for React Native app provided that when run will remove only all of the excess starter code features easily and efficiently. 
 
 This JavaScript file to run is the reset-project.js located in the scripts directory. You can run this file by running the provided script command, which can be found in the package.json file: 
@@ -10,14 +20,15 @@ npm run reset-project
 ```
 
 After this is successfully run, you can safely delete the following command from the package.json file: 
-```
+```javascript
 "reset-project": "node ./scripts/reset-project"
+```
 
+### Finding 3
 The app directory contains all the files for each of the app's webpages in this Experiment and the _layout.tsx file. 
 * The _layout.tsx file, indicated with a _, is a special file that Expo Router uses to control the layout and navigation for all of the app's webpages!
 * Whenever you need to add a new webpage for the app, you can create a new file with a specific name without the beginning underscore in front of the new file name inside the app directory. The _layout.tsx file automatically adds all the other files that can be treated as Screens to the stack for display. 
 * Any file without the underscore in front of the name (unlike _layout.tsx) are files that can be treated as a Screen. Every webpage needs to have their corresponding file be treated as Screens.
-```
 
 # Welcome to your Expo app 👋
 
