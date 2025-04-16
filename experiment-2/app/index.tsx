@@ -24,7 +24,7 @@ export default function Index() {
           </Link>
       </View>
 
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text>This is the landing page of the React Native app for Experiment 2!</Text>
     </View>
   );
 }
