@@ -11,19 +11,22 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-        {/* Navigation Buttons */}
-        <View style={{flexDirection: "row"}}>
-            <Link href="/" asChild>
-                <Button title="Home" />
-            </Link>
-            <Link href="/about" asChild>
-                <Button title="About" />
-            </Link>
-        </View>
+      {/* Navigation Buttons */}
+      <View style={{flexDirection: "row"}}>
+        <Link href="/" asChild>
+          <Button title="Home" />
+        </Link>
+        <Link href="/about" asChild>
+          <Button title="About" />
+        </Link>
+        <Link href="/insights" asChild>
+          <Button title="Insights" />
+        </Link>
+      </View>
 
-        {/* Insights page content */}
-        <Text>Welcome to the Insights page!</Text>
-        <Text>This page is where I record my findings when developing this app for this Experiment!</Text>
+      {/* Insights page content */}
+      <Text>Welcome to the Insights page!</Text>
+      <Text>This page is where I record my findings when developing this app for this Experiment!</Text>
     </View>
   );
 }
