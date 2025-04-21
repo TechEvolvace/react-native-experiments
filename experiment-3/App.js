@@ -11,8 +11,8 @@ const Tab = createBottomTabNavigator();
 function HomePage() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Welcome to this experiment's app! Here is the Home page of the app.</Text>
-      <Text>
+      <Text style={{ fontSize: 24, marginVertical: 10 }}>Welcome to this experiment's app! Here is the Home page of the app.</Text>
+      <Text style={{ fontSize: 16, marginHorizontal: 16 }}>
         Use the navigation buttons on the bottom if you are loading this app
         on an iOS device, like an Apple iPhone, to switch between the Home page and 
         the Profile page for this experiment's app!
