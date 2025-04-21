@@ -1,14 +1,38 @@
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+const Tab = createBottomTabNavigator();
+
+function HomeScreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Home Screen</Text>
+    </View>
+  )
+}
+
+/* 
+function ProfileScreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Profile Screen</Text>
+    </View>
+  )
+}
+*/
+
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.success_message}>Open up App.js to start working on your app!</Text>
-      <Text>Successfully created new React Native app that have starter code without TypeScript files!</Text>
-      <Text>This app is also compatible with Expo Go to be able to run this app on an iPhone device that has Expo Go app installed!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen name="Home" component={HomeScreen} />
+        {/* <Tab.Screen name="Profile" component={ProfileScreen} /> */}
+      </Tab.Navigator>
+    </NavigationContainer>
   );
 }
 
