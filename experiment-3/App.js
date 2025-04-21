@@ -7,29 +7,36 @@ import { StyleSheet, Text, View } from 'react-native';
 
 const Tab = createBottomTabNavigator();
 
-function HomeScreen() {
+{/* Home page, also this experiment app's landing page */}
+function HomePage() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Home Screen</Text>
+      <Text>Welcome to this experiment's app! Here is the Home page of the app.</Text>
+      <Text>
+        Use the navigation buttons on the bottom if you are loading this app
+        on an iOS device, like an Apple iPhone, to switch between the Home page and 
+        the Profile page for this experiment's app!
+      </Text>
     </View>
   )
 }
 
-
-function ProfileScreen() {
+{/* Profile page */}
+function ProfilePage() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Profile Screen</Text>
+      <Text>Welcome to the Profile page of this experiment's app!</Text>
     </View>
   )
 }
 
+{/* This experiment's app */}
 export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Profile" component={ProfileScreen} />
+        <Tab.Screen name="Home" component={HomePage} />
+        <Tab.Screen name="Profile" component={ProfilePage} />
       </Tab.Navigator>
     </NavigationContainer>
   );
