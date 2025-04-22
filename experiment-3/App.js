@@ -26,7 +26,8 @@ function HomePage() {
 function ProfilePage() {
   return (
     <View style={styles.container}>
-      <Text style={styles.body}>Welcome to the Profile page of this experiment's app!</Text>
+      <Text style={styles.title}>Welcome to the Profile page of this experiment's app!</Text>
+      <Text style={styles.body}>This page will soon be a page where you can change the color, font size, and font style of the content here! But for now, this will be the Profile page!</Text>
     </View>
   )
 }
@@ -54,7 +55,7 @@ const styles = ScaledSheet.create({
   },
   title: {
     fontSize: '24@ms',
-    marginVertical: '10@ms',
+    marginVertical: '20@ms',
     textAlign: 'center',
     fontWeight: 'bold',
   },
