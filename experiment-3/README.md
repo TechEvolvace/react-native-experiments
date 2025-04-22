@@ -17,3 +17,8 @@ List of packages that help implement responsive design:
 * react-native-size-matters - offers scaling functions for sizes and font sizes based on device dimensions 
 * react-native-responsive-sizes - provides simple functions for responsive font size, width, height, and spacing
 * rn-responsive-styles - lets you define stylesheets that adapt to device size, similar to CSS media queries
+
+### React Native does not use a browser or the CSSOM and thus is not compatible with web CSS!
+Since React Native is not compatible with the typical CSS used for web development, it's not possible to: 
+* Use External CSS files!
+* Support CSS media queries or breakpoints!
