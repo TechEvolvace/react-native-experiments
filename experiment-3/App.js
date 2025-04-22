@@ -12,7 +12,8 @@ const Tab = createBottomTabNavigator();
 function HomePage() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome to this experiment's app! Here is the Home page of the app.</Text>
+      <Text style={styles.title}>Welcome to this experiment's app! Here is the <Text style={styles.useful_info}>Home page</Text> of the app.</Text>
+      <Text style={styles.body}>This is the landing page for this experiment app, the <Text style={styles.useful_info}>first page you see when you run and load this app on your iOS device</Text>!</Text>
       <Text style={styles.body}>
         Use the navigation buttons on the bottom if you are loading this app
         on an iOS device, like an Apple iPhone, to switch between the Home page and 
@@ -26,7 +27,7 @@ function HomePage() {
 function ProfilePage() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome to the Profile page of this experiment's app!</Text>
+      <Text style={styles.title}>Welcome to the <Text style={styles.useful_info}>Profile page</Text> of this experiment's app!</Text>
       <Text style={styles.body}>This page will soon be a page where you can change the color, font size, and font style of the content here! But for now, this will be the Profile page!</Text>
     </View>
   )
@@ -63,5 +64,9 @@ const styles = ScaledSheet.create({
     fontSize: '16@ms',
     marginHorizontal: '16@ms',
     textAlign: 'center',
+    marginVertical: '12@ms',
   },
+  useful_info: {
+    color: '#5ea758',
+  }
 });
