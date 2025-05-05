@@ -4,7 +4,8 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Experiment 5</Text>
+      <Text>For this experiment, I will be developing a multi-page app with unique page transition animations for each webpage corresponding to my hobbies!</Text>
       <StatusBar style="auto" />
     </View>
   );
